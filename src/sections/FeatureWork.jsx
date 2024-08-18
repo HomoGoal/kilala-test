@@ -3,10 +3,15 @@ import FeatureWorkItem from '../components/FeatureWorkItem';
 import featureWorkIcon from '../assets/svg/featureWorkIcon.svg';
 import featureWorkBg from '../assets/svg/featureWorkBg.svg';
 
+import featureWorkHiddenImage from '../assets/img/featureWorkHiddenImage.webp';
+
 const FeatureWork = ({ featureWorkData }) => {
   return (
     <section className="feature-work">
+     
       <div className="feature-work-main">
+        <img className="feature-work-main__hidden-image" src={featureWorkHiddenImage} />
+        <div className="feature-work-main__hidden-bg"></div>
         <div className="feature-work-main__container">
           <img
             className="feature-work-main__img"

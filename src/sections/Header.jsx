@@ -1,6 +1,7 @@
 import { NavLink } from 'react-router-dom';
 
 import logo from '../assets/svg/logo.svg';
+import { useState } from 'react';
 
 const Header = () => {
   const navList = [
@@ -25,12 +26,20 @@ const Header = () => {
       path: '/blog',
     },
   ];
+
+  const [active, setActive] = useState(false);
+
+  const handleActiveMenu = () => {
+    setActive(!active)
+  }
+
   return (
     <header className="header">
       <div className="header__logo">
         <img src={logo} alt="logo" />
       </div>
-      <nav className="header__nav-container">
+      <a className={`header__menu ${active && "active"}`} onClick={handleActiveMenu}>MENU</a>
+      <nav className={`header__nav-container ${active && "active"}`}>
         {navList.map((item) => (
           <NavLink
             to={item.path}
@@ -38,6 +47,7 @@ const Header = () => {
             className={({ isActive }) =>
               isActive ? 'header__nav-item active' : 'header__nav-item'
             }
+            onClick={handleActiveMenu}
           >
             {item.name}
           </NavLink>

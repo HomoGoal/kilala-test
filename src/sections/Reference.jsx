@@ -1,5 +1,5 @@
 const Reference = () => {
-  return <section>Reference</section>;
+  return <section></section>;
 };
 
 export default Reference;
