@@ -1,0 +1,29 @@
+.feature-work-main-item {
+  display: grid;
+  grid-template-columns: 64px 1fr;
+  gap: 33px;
+}
+
+.feature-work-main-item__img {
+  height: 55px;
+}
+
+.feature-work-main-item__content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.feature-work-main-item__title {
+  @include p1;
+
+  color: $white;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.feature-work-main-item__text {
+  @include p6;
+
+  color: $grey;
+}

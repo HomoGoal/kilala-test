@@ -1,0 +1,15 @@
+.button {
+  @include p4;
+
+  width: max-content;
+  max-width: 100%;
+  padding: 17px 27px;
+  background-color: transparent;
+  border: 1px solid $white;
+  text-transform: uppercase;
+  color: $white;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+

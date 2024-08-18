@@ -1,0 +1,9 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+	<title>software_layers2-svg</title>
+	<style>
+		.s0 { fill: none;stroke: #000000;stroke-miterlimit:10;stroke-width: 2 } 
+	</style>
+	<path id="Layer" class="s0" d="m18 26.1l-16 6.9 30 12 30-12-16-6.9"/>
+	<path id="Layer" class="s0" d="m18 39.1l-16 6.9 30 12 30-12-16-6.9"/>
+	<path id="Layer" class="s0" d="m32 32l30-12-30-13-30 13z"/>
+</svg>
